@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>Formulário</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header><h1>Curso de HTML</h1></header>
+		<form method="post" action="#" enctype="multipart/form-data">
+			<fieldset>
+				<legend>Dados pessoais:</legend>
+				Nome: <input type="text" name="nome" placeholder="Informe o seu nome" value="Joana" required><br><br>
+				CPF: <input type="text" name="cpf" placeholder="Informe o seu CPF"maxlength="14" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}"><br><br>
+				Email: <input type="email" name="email" placeholder="Informe o seu email"><br><br>
+				Data de Nascimento: <input type="text" name="nascimento" placeholder="Informe a sua data de nascimento" maxlength="10" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}"><br><br>
+				Data de Nascimento (novo formato): <input type="date" name="data" placeholder="Informe a sua data de nascimento"><br><br>
+				Estado civil:
+				<select name="estado civil">
+					<option value="Solteiro(a)">Solteiro(a)</option>
+					<option value="Casado(a)">Casado(a)</option>
+					<option value="Divorciado(a)">Divorciado(a)</option>
+					<option value="Viúvo(a)">Viúvo(a)</option>
+				</select>
+			</fieldset>
+			<br>Senha: <input type="password" name="senha"><br><br>
+			<label for="endereço">Endereço:</label>
+				<textarea id="endereço" name="endereço" placeholder="Informe o seu endereço" cols="3" rows="3" required>rua, número, bairro, cidade, estado, CEP</textarea><br><br>
+			<label for="homem">Homem</label>
+			<input type="radio" name="sexo" id="homem" value="homem"><br>
+			<label for="mulher">Mulher</label>
+			<input type="radio" name="sexo" id="mulher" value="mulher"><br><br>
+			Quais cursos você pretende fazer?<br>
+			<input type="checkbox" name="html" value="1">HTML<br>
+			<input type="checkbox" name="css" value="1">CSS<br>
+			<input type="checkbox" name="javascript" value="1">JavaScript<br><br>
+			Qual linguagem você pretende aprender?<br>
+			<input list="cursos" name="curso2">
+				<datalist id="cursos">
+					<option value="Python">
+					<option value="Java">
+					<option value="C++">
+				</datalist><br><br>
+			Prefere qual período?<br>
+			<input type="radio" name="período" value="diurno" checked>Diurno<br>
+			<input type="radio" name="período" value="vespertino">Vespertino<br>
+			<input type="radio" name="período" value="noturno">Noturno<br><br>
+			Informe sua cor preferida:<br>
+			<input type="color" name="cor"><br><br>
+			Upload de arquivo:<br>
+				<input type="file" name="arquivo"><br><br>
+			Selecione uma nota para este site:<br>
+			<input type="range" name="faixa"><br><br>
+			<button type="submit">Enviar</button>
+		</form>
+	</body>
+</html>
