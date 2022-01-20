@@ -12,7 +12,7 @@
         <h1>Simple Form</h1>
     </header>
     <section>
-        <form action="#" method="post">
+        <form action="file.php" method="post" enctype="multipart/form-data">
             <fieldset>
                 <legend>Personal Data</legend>
                 <label>Name:<input class="text" type="text" id="iName"></label>
@@ -27,6 +27,7 @@
             </fieldset>
             <fieldset>
                 <legend>Other information</legend>
+                <label>Picture:<input type="file" name="picture" accept="image/*"></label>
                 <label>Favorite color:<input type="color" id="iColor"></label>
                 <label>Children:<input type="number" id="iChildren" min="0"></label>
                 <label>Favorite Food:
