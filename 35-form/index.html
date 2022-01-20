@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>Simple Form</h1>
+    </header>
+    <section>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Data</legend>
+                <label>Name:<input class="text" type="text" id="iName"></label>
+                <label>Email:<input class="text" type="email" id="iEmail"></label>
+                <label>Birthday:<input type="date" id="iBirth"></label>
+                <label>Employed:<input type="checkbox" id="iEmployed">Yes</label>
+                <label for="iGender">Gender:
+                    <input type="radio" name="iGender" id="Male">Male
+                    <input type="radio" name="iGender" id="Female">Female
+                    <input type="radio" name="iGender" id="Other">Other
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Other information</legend>
+                <label>Favorite color:<input type="color" id="iColor"></label>
+                <label>Children:<input type="number" id="iChildren" min="0"></label>
+                <label>Favorite Food:
+                    <select name="iFavFood" id="Food">
+                        <option value="French Fries">French Fries</option>
+                        <option value="Hamburguer" selected>Hamburguer</option>
+                        <option value="Hot Dog">Hot Dog</option>
+                    </select>
+                </label>
+                <label>Description:<br>
+                    <textarea name="description"></textarea>
+                </label>
+            </fieldset>
+            <input id="button" type="submit" value="Send form">
+
+        </form>
+    </section>
+</body>
+</html>

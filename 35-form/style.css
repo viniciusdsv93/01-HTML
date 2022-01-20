@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.text {
+    width: 200px;
+}
+
+input, textarea, select {
+    font-size: 15px;
+    border: 1px solid #CCC;
+    margin-left: 10px;
+}
+
+textarea {
+    margin: 10px 0px;
+    width: 200px;
+    height: 100px;
+    resize: none;
+}
+
+#button {
+    margin: 0;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #CCC;
+    background-color: #EEE;
+}
+
+#button:hover {
+    background-color: #DDD;
+}
+
+fieldset {
+    border: 2px solid #CCC;
+    width: 500px;
+    margin-bottom: 5px;
+}
