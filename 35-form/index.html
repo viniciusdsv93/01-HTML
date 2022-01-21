@@ -15,9 +15,9 @@
         <form action="file.php" method="post" enctype="multipart/form-data">
             <fieldset>
                 <legend>Personal Data</legend>
-                <label>Name:<input class="text" type="text" id="iName"></label>
-                <label>Email:<input class="text" type="email" id="iEmail"></label>
-                <label>Birthday:<input type="date" id="iBirth"></label>
+                <label>Name:<input class="text" type="text" id="iName" autofocus required></label>
+                <label>Email:<input class="text" type="email" id="iEmail" required></label>
+                <label>Birthday:<input type="date" id="iBirth" required></label>
                 <label>Employed:<input type="checkbox" id="iEmployed">Yes</label>
                 <label for="iGender">Gender:
                     <input type="radio" name="iGender" id="Male">Male
@@ -27,7 +27,7 @@
             </fieldset>
             <fieldset>
                 <legend>Other information</legend>
-                <label>Picture:<input type="file" name="picture" accept="image/*"></label>
+                <label>Picture:<input type="file" name="picture" accept="image/*" required></label>
                 <label>Favorite color:<input type="color" id="iColor"></label>
                 <label>Children:<input type="number" id="iChildren" min="0"></label>
                 <label>Favorite Food:

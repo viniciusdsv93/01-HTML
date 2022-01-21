@@ -1,3 +1,9 @@
+:root {
+    --darkgray: #AAA;
+    --lightgray: #CCC;
+    --lightergray: #EEE;
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -7,10 +13,27 @@ body {
     width: 80%;
 }
 
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+table {
+    margin: 0 auto;
+    width: 80%;
+    
+}
+
 td, th {
-    width: 100px;
+    width: 33.33%;
+    border-bottom: 1px solid var(--darkgray);
+    padding: 10px;
 }
 
 th {
-    background-color: #CCC;
+    background-color: var(--lightgray);
+}
+
+tr:hover {
+    background-color: var(--lightergray);
 }
