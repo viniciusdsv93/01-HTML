@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Alunos</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cadastro de Alunos</h1>
+        </header>
+        <main>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Dados do Aluno</legend>
+                    <table>
+                        <tr>
+                            <td><label for="iProntuario">Prontuário*:</label></td>
+                            <td><input type="number" placeholder="00000" min="0" max="99999" id="iProntuario" required autofocus></td>
+                        </tr>
+                        <tr>
+                            <td><label for="iNome">Nome*:</label></td>
+                            <td><input type="text" placeholder="Digite o nome completo" maxlength="50" id="iNome" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="iNasc">Data de Nascimento*:</label></td>
+                            <td><input type="date" min="1950-01-01" id="iNasc" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="iGen">Gênero*:</label></td>
+                            <td>
+                                <select name="Genero" id="iGen" required>
+                                    <option value=""></option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Feminino">Feminino</option>
+                                    <option value="Outro">Outro</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="iCurso">Curso*:</label></td>
+                            <td>
+                                <select name="Curso" id="iCurso" required>
+                                    <option value=""></option>
+                                    <option value="Jornalismo">Jornalismo</option>
+                                    <option value="Direito">Direito</option>
+                                    <option value="Psicologia">Psicologia</option>
+                                    <option value="Educação Física">Educação Física</option>
+                                    <option value="Biologia">Biologia</option>
+                                    <option value="Engenharia">Engenharia</option>
+                                    <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="iCPF">CPF*:</label></td>
+                            <td><input type="text" id="iCPF" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="iRG">RG*:</label></td>
+                            <td><input type="text" id="iRG" placeholder="00.000.000-0" pattern="\d{2}\.\d{3}\.\d{3}-\d{1}" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="iTelefone">Telefone:</label></td>
+                            <td><input type="text" id="iTelefone" placeholder="(00) 0000-0000" pattern="\([0-9]{2}\)[0-9]{4}[0-9]{4}"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="iCelular">Celular:</label></td>
+                            <td><input type="text" id="iCelular" placeholder="(00) 00000-0000" pattern="\([0-9]{2}\)[0-9]{5}[0-9]{4}"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="iE-mail">E-mail:</label></td>
+                            <td><input type="email" id="iE-mail" placeholder="email@exemplo.com"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Dados do Responsável</legend>
+                    <table>
+                        <tr>
+                            <td><label for="iNomeResponsavel">Nome*:</label></td>
+                            <td><input type="text" placeholder="Digite o nome completo" maxlength="50" id="iNomeResponsavel" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="iCPFResponsavel">CPF*:</label></td>
+                            <td><input type="text" id="iCPFResponsavel" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="iRGResponsavel">RG*:</label></td>
+                            <td><input type="text" id="iRGResponsavel" placeholder="00.000.000-0" pattern="\d{2}\.\d{3}\.\d{3}-\d{1}" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="iE-mailResponsavel">E-mail:</label></td>
+                            <td><input type="email" id="iE-mailResponsavel" placeholder="email@exemplo.com"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="iNascResponsavel">Data de Nascimento*:</label></td>
+                            <td><input type="date" min="1950-01-01" id="iNascResponsavel" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="iCelularResponsavel">Celular:</label></td>
+                            <td><input type="text" id="iCelularResponsavel" placeholder="(00) 00000-0000" pattern="\([0-9]{2}\)[0-9]{5}[0-9]{4}"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <input class="btn" type="submit"> <button>Limpar</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
