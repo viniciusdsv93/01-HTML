@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+* {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    background-color: #202124;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 990px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    color: #727272;
+    padding: 0 10px;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(90deg, rgb(120, 48, 255), rgb(213, 190, 255));
+    height: 400px;
+}
+
+#banner .banner_headline,
+#banner .banner_image {
+    flex: 1;
+}
+
+#banner .banner_headline {
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+#banner .banner_headline h1,
+#banner .banner_headline h2 {
+    padding-left: 20px;
+} 
+
+#banner .banner_headline h1 {
+    font-size: 50px;
+}
+
+#banner .banner_headline h2 {
+    font-size: 30px;
+}
+
+#banner .banner_image {
+    background-image: url('img/tenis.png');
+    background-size: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+.container .content_item {
+    flex: 1;
+    margin: 40px;
+    padding: 20px;
+    border: 5px solid rgb(120, 48, 255);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+#features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f8f8f8;
+}
+
+#features .container {
+    display: block;
+    margin-bottom: 100px;
+}
+
+#features .container h1 {
+    color: #000000;
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+}
+
+#features .container p {
+    font-size: 20px;
+    text-align: justify;
+    margin: 20px;
+}
+
+#comments {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 100px;
+}
+
+#comments .container {
+    display: flex;
+    flex-direction: column;
+}
+
+#comments .container h1 {
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 100px;
+    color: rgb(120, 48, 255);
+}
+
+#comments .container h2 {
+    font-size: 40px;
+}
+
+#comments .container p {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(120, 48, 255);
+    padding: 40px;
+    border: 5px solid rgb(120, 48, 255);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: #202124;
+}
+
+footer .container {
+    justify-content: flex-start;
+    align-items: center;
+    color: #727272;
+    font-size: 20px;
+}
