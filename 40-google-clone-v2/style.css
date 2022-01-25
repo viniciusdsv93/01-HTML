@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    padding-top: 4px;
+    padding-right: 20px;
+    font-size: 13px;
+}
+
+.header-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header a {
+    color: #000000;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+section .logo {
+    margin-bottom: 30px;
+}
+
+section .search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 50px;
+    width: 480px;
+    height: 40px;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.search-box:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.search-box input {
+    margin-left: 20px;
+    width: 380px;
+    border: none;
+    outline: none;
+}
+
+.access {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.access img {
+    margin-right:10px;
+    cursor:pointer;
+}
+
+button {
+    background-color: #f2f2f2;
+    border:1px solid #f2f2f2;
+    padding: 10px 16px;
+    margin: 30px 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #5F6368;
+    font-size: 14px;
+}
+
+button:hover {
+    border:1px solid #dadada;
+    box-shadow: 0px 1px 0px #CCC;
+    color: #000000;
+}
+
+.disponibilizado {
+    font-size: 14px;
+    color: #5F6368;
+}
+
+.disponibilizado a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #f2f2f2;
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    color: #5F6368;
+    font-size: 14px;
+}
+
+.footer1 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.footer2 {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #cbd3db;
+    padding: 0 23px;
+}
+
+.footer2 a {
+    color: #5F6368;
+    padding: 0px 12px;
+}
+
+.footer2 a:hover {
+    text-decoration: underline;
+} 
